@@ -72,6 +72,7 @@ namespace Blog.UITests
             using (IWebDriver driver = new ChromeDriver())
             {
                 const string homeUrl = "https://am.globbing.com/en";
+                
                 driver.Navigate().GoToUrl(homeUrl);
 
                 IWebElement login = driver.FindElement(By.Id("login-btn"));
