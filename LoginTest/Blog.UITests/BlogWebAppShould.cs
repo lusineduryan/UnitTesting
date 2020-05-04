@@ -37,12 +37,11 @@ namespace Blog.UITests
 
                 //IWebElement element = driver.FindElement(By.XPath("/html/body/div[1]"));
                 IWebElement element = driver.FindElement(By.Id("vuukle-emote"));
-                //element.Click();
+                element.Click();
 
                 DemoHelper.Pause();
 
                 driver.Navigate().Refresh();
-
                 Assert.Equal(homeUrl, driver.Url);
             }
         }
