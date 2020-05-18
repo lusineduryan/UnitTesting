@@ -40,6 +40,7 @@ namespace Blog.UITests
                 element.Click();
                 
                 DemoHelper.Pause();
+                
                 driver.Navigate().Refresh();
                 Assert.Equal(homeUrl, driver.Url);
             }
