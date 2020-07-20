@@ -95,6 +95,7 @@ namespace Blog.UITests
                 password.SendKeys("psw");
                 driver.FindElement(By.Name("email")).Submit();
 
+                
                 Assert.StartsWith("Globbing", driver.Title);
             }
         }
