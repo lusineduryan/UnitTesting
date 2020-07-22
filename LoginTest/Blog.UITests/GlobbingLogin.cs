@@ -29,6 +29,7 @@ namespace Blog.UITests
 
                 driver.FindElement(By.Name("email")).Submit();
 
+                
                 Assert.StartsWith("Globbing", driver.Title);
             }
         }
